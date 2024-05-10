@@ -28,7 +28,7 @@ const AdminPanel = () => {
     if (user && user.email === adminEmail) {
       getAllFoodItems().then(setItems);
     } else {
-      navigate("/"); 
+      navigate("/");
     }
   }, [user, navigate]);
 
